@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+/* This changes all the animations globally */
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    padding:10px 50px;
+}
+.header__container{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header img{
+    width:140px;
+    vertical-align: middle;
+}
+header ul{
+    list-style: none;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width:410px;
+    max-width: 100%;
+}
+header li{
+    position:relative;
+}
+header li a{
+    text-decoration: none;
+    color: #0371a2;
+    font-weight: 500;
+}header li.active::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    background: #f1c72f;
+}
+h3{
+    font-size: 16px;
+}
+section{
+    width:100%;
+    padding:50px 100px;
+}section ul{
+    padding-left: 20px;
+}
+p{
+    line-height:1.5;
+}
+table {
+    border-collapse: collapse;
+    margin:0 auto;
+}
+td, th {
+    border: 1px solid white;
+    text-align:left;
+    padding:10px 15px;
+}
+.banner__img{
+    max-width:100%;
+    max-height:500px;
+}
+#form h2{
+    color:#0371a2;
+}
+form {
+    width: 500px;
+    color: #0371a2;
+    max-width: 100%;
+    margin: 0 auto;
+}
+form input:not([type=radio]), form select, form textarea {
+    width: 95%;
+    color: #0371a2;
+    padding: 5px 10px;
+    min-height: 48px;
+    font-size: 16px;
+}.form__button{
+    margin-top:10px;
+    background:black;
+    color:white !important;
+    font-weight:500;
+    border:none;
+    padding:5px 10px;
+}
+#staff .dentista img{
+    width:90px;
+}
+.banner{
+    height: 85vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    color:white;
+}
+.banner-home{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/inicio.jpg) center center no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+.banner-servicios{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/servicios.jpg) center center no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+.banner-nosotros{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/nosotros.jpg) center center no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+.banner-covid{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/covid.jpg) center center no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+.banner-contacto{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/contacto.jpg) center center no-repeat;
+    background-position:center center;
+    background-size: cover;
+}.protocol img{
+    max-width:100%;
+}
+p.counter__number {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.counter__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 610px;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.counter__counter {
+    flex: 1;
+}
+section, footer{
+    text-align:center;
+}#banner{
+    text-align:left;
+}
+#staff{
+    color:#0371a2;
+}
+#staff h2{
+    color:#04587c;
+}
+.staff__member {
+    display: inline-block;
+    width: 30%;
+    color:black;
+}
+.staff__member img {
+    width: 120px;
+}#que-ofrecemos {
+    background: #04587c;
+    color: white;
+}
+#testimonios{
+    background: #f5f5f5;
+}footer{
+    background:#0371a2;
+    color:White;
+    padding:5px;
+}footer p{
+    margin:0;
+}
+.protocol{
+    display:grid;
+    grid-template-areas: "area1 area1"
+                          "area2 area3";
+    grid-template-columns: 60% 40%;
+}.protocol__title{
+    grid-area: area1;
+}
+.protocol__column-area2{
+    grid-area: area2;
+}
+.protocol__column-area3{
+    grid-area: area3;
+}
+ul.protocol__list li {
+    line-height: 1.55;
+    margin-bottom: 10px;
+    text-align: left;
+}
+@media screen and (max-width:768px){   
+    header {
+        padding: 10px 20px;
+    }
+    section{        
+        padding: 25px 20px;
+    } 
+    .protocol {
+        display: grid;
+        grid-template-areas:
+            "area1 area1"
+            "area2 area2"
+            "area3 area3";
+    }
+}
