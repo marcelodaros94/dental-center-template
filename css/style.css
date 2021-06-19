@@ -104,6 +104,13 @@ form input:not([type=radio]), form select, form textarea {
     flex-flow: column wrap;
     justify-content: flex-end;
     color:white;
+    position:relative;
+}
+.banner__cta {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 50px;
 }
 .banner-home{
     background: linear-gradient(rgb(255 255 255 / 0%), rgb(0 0 0)), url(../img/inicio.jpg) center center no-repeat;
