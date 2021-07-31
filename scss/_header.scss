@@ -56,5 +56,7 @@ div#navbarNavDropdown {
         padding: 10px 20px;
     }.header__nav{
         width:100%;
+    }header ul li.active::after{
+        display:none !important;
     }
 }
